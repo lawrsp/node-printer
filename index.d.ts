@@ -57,6 +57,8 @@ interface PrintOptions {
    * type: RAW, TEXT, PDF, JPEG, .. depends on platform
    */
   type?: string;
+  // docname
+  docname?: string;
   /**
    * supported page sizes may be retrieved using getPrinterDriverOptions, supports CUPS printing options
    */

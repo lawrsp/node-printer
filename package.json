@@ -1,7 +1,7 @@
 {
   "name": "printer",
   "description": "Node.js printer bindings",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "homepage": "https://github.com/lawrsp/node-printer",
   "author": {
     "name": "Ion Lupascu",
@@ -42,5 +42,5 @@
     "nan": "^2.18.0",
     "prebuild-install": "^7.1.1"
   },
-  "files": ["lib", "src"]
+  "files": ["lib", "index.d.ts", "printer.js", "binding.gyp"]
 }
