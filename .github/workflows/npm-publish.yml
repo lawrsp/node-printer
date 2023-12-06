@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: 16
       - run: yarn version
-      - name: Install Dependencies
-        run: yarn install
-      - name: Build
-        run: yarn build
+      # - name: Install Dependencies
+      #   run: yarn install
+      # - name: Build
+      #   run: yarn build
       - id: Publish
         name: Publish to NPM
         uses: JS-DevTools/npm-publish@v1

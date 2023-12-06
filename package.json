@@ -42,5 +42,5 @@
   "main": "printer.js",
   "types": "index.d.ts",
   "dependencies": {},
-  "files": ["lib", "index.d.ts", "printer.js", "binding.gyp"]
+  "files": ["lib", "src", "index.d.ts", "printer.js", "binding.gyp"]
 }
