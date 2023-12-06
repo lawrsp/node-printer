@@ -8,26 +8,29 @@ on:
     branches:
       - main
     paths:
-     - package.json
+      - package.json
 jobs:
   npm-publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - run: yarn version
+          node-version: "20"
+      # - run: npm ci
+      # - run: npm test
+      # - run: yarn version
       # - name: Install Dependencies
       #   run: yarn install
       # - name: Build
       #   run: yarn build
       - id: Publish
         name: Publish to NPM
-        uses: JS-DevTools/npm-publish@v1
+        uses: JS-DevTools/npm-publish@v3
         with:
-          token: ${{secrets.NPM_PUBLISH_TOKEN}}
+          token: ${{ secrets.NPM_PUBLISH_TOKEN }}
           dry-run: false
+          access: public
       - name: Post-publish
         if: steps.publish.outputs.type != 'none'
         run: |
