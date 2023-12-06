@@ -1,7 +1,7 @@
 {
   "name": "@lawrsp/printer",
   "description": "Node.js printer bindings",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "homepage": "https://github.com/lawrsp/node-printer",
   "author": {
     "name": "Ion Lupascu",
@@ -21,7 +21,7 @@
     "prebuild-install": "^7.1.1"
   },
   "engines": {
-    "node": ">= 12.0.0"
+    "node": ">= 14.0.0"
   },
   "scripts": {
     "install": "prebuild-install || node-gyp rebuild",
@@ -42,5 +42,13 @@
   "main": "printer.js",
   "types": "index.d.ts",
   "dependencies": {},
-  "files": ["lib", "src", "index.d.ts", "printer.js", "binding.gyp"]
+  "files": [
+    "lib",
+    "src",
+    "build",
+    "tools",
+    "index.d.ts",
+    "printer.js",
+    "binding.gyp"
+  ]
 }
