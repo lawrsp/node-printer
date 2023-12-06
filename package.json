@@ -1,7 +1,7 @@
 {
   "name": "@lawrsp/printer",
   "description": "Node.js printer bindings",
-  "version": "0.5.12",
+  "version": "0.5.15",
   "homepage": "https://github.com/lawrsp/node-printer",
   "author": {
     "name": "Ion Lupascu",
@@ -51,7 +51,6 @@
     "index.d.ts",
     "printer.js",
     "binding.gyp",
-    "package.json",
-    "package-lock.json"
+    "package.json"
   ]
 }
