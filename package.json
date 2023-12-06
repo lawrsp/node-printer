@@ -1,7 +1,7 @@
 {
   "name": "@lawrsp/printer",
   "description": "Node.js printer bindings",
-  "version": "0.5.15",
+  "version": "0.5.16",
   "homepage": "https://github.com/lawrsp/node-printer",
   "author": {
     "name": "Ion Lupascu",
@@ -38,7 +38,7 @@
       "type": "BSD"
     }
   ],
-  "main": "printer.js",
+  "main": "lib/index.js",
   "types": "index.d.ts",
   "dependencies": {
     "nan": "^2.18.0"
